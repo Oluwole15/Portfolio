@@ -21,7 +21,7 @@ export default function AboutStory() {
             </h2>
             <div className="relative w-full max-w-sm aspect-[5/4] overflow-hidden rounded-2xl">
               <Image
-                src="/about/image-10.jpg"
+                src="/about/image-1.jpg"
                 alt="How I Got Here"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function AboutStory() {
             </h2>
             <div className="relative w-full max-w-sm aspect-[3/2] overflow-hidden rounded-2xl">
               <Image
-                src="/about/image-11.jpg"
+                src="/about/image-5.jpg"
                 alt="Beyond Work"
                 fill
                 className="object-cover"
