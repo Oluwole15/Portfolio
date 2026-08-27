@@ -58,14 +58,6 @@ export const metadata: Metadata = {
     siteName: "Nelson Oluwole",
     title: "Nelson Oluwole — Senior Product Designer",
     description: "I design digital products users understand and return to.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1254,
-        height: 1254,
-        alt: "Nelson Oluwole — Senior Product Designer",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -73,7 +65,6 @@ export const metadata: Metadata = {
     title: "Nelson Oluwole — Senior Product Designer",
     description: "I design digital products users understand and return to.",
     creator: "@nelsonyolemi1",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
