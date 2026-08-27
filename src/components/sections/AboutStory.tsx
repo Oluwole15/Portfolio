@@ -19,7 +19,7 @@ export default function AboutStory() {
             >
               How I Got Here
             </h2>
-            <div className="relative w-full max-w-sm aspect-[3/4] overflow-hidden rounded-2xl">
+            <div className="relative w-full max-w-sm aspect-[4/5] overflow-hidden rounded-2xl">
               <Image
                 src="/about/portrait.png"
                 alt="How I Got Here"
