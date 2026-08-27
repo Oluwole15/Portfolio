@@ -12,17 +12,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://nelsonyolemi.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.nelsonoluwole.xyz";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: siteUrl,
+  },
   title: {
-    default: "Nelson Oluwole — Founder & Senior Product Designer",
+    default: "Nelson Oluwole — Senior Product Designer",
     template: "%s | Nelson Oluwole",
   },
-  description:
-    "Portfolio of Nelson Oluwole, Founder and Senior Product Designer specializing in intuitive digital products, SaaS platforms, mobile applications, and design systems.",
-  applicationName: "Nelson Oluwole Portfolio",
+  description: "I design digital products users understand and return to.",
+  applicationName: "Nelson Oluwole",
   authors: [{ name: "Nelson Oluwole", url: siteUrl }],
   creator: "Nelson Oluwole",
   publisher: "Nelson Oluwole",
@@ -31,7 +34,6 @@ export const metadata: Metadata = {
     "Product Designer",
     "UI/UX Designer",
     "Senior Product Designer",
-    "Design Educator",
     "SaaS Design",
     "Design Systems",
     "Lagos Product Designer",
@@ -53,26 +55,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Nelson Oluwole Portfolio",
-    title: "Nelson Oluwole — Founder & Senior Product Designer",
-    description:
-      "Designing intuitive digital products that solve real problems, simplify complexity, and create measurable value.",
+    siteName: "Nelson Oluwole",
+    title: "Nelson Oluwole — Senior Product Designer",
+    description: "I design digital products users understand and return to.",
     images: [
       {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "Nelson Oluwole — Founder & Senior Product Designer",
+        url: "/og-image.png",
+        width: 1254,
+        height: 1254,
+        alt: "Nelson Oluwole — Senior Product Designer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nelson Oluwole — Founder & Senior Product Designer",
-    description:
-      "Designing intuitive digital products that solve real problems, simplify complexity, and create measurable value.",
+    site: "@nelsonyolemi1",
+    title: "Nelson Oluwole — Senior Product Designer",
+    description: "I design digital products users understand and return to.",
     creator: "@nelsonyolemi1",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
