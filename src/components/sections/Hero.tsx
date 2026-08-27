@@ -34,9 +34,7 @@ export default function Hero() {
             Book a Call
           </a>
           <a
-            href="https://t.me/The_uiux_guy"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contact"
             className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 px-8 py-3.5 text-sm font-semibold text-zinc-700 transition-all hover:border-indigo-500 hover:text-indigo-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:border-white/15 dark:text-zinc-200 dark:hover:text-indigo-400 sm:w-56"
           >
             <Icon icon="simple-icons:telegram" className="h-4 w-4" />
