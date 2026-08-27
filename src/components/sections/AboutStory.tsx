@@ -21,7 +21,7 @@ export default function AboutStory() {
             </h2>
             <div className="relative w-full max-w-sm aspect-[5/4] overflow-hidden rounded-2xl">
               <Image
-                src="/about/image-1.jpg"
+                src="/about/portrait.png"
                 alt="How I Got Here"
                 fill
                 className="object-cover"
