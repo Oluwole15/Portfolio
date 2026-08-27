@@ -61,7 +61,7 @@ export default function InfiniteImageCarousel({ images }: InfiniteImageCarouselP
   }, [images.length]);
 
   return (
-    <div className="px-10 md:px-16">
+    <div className="px-4 md:px-8 lg:px-12">
       <div className="overflow-hidden py-8">
         <div ref={trackRef} className="flex w-max will-change-transform">
           {marqueeItems.map((image, index) => (
