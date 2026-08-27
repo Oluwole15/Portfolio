@@ -9,7 +9,7 @@ import { Icon } from "@iconify/react";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
   const pathname = usePathname();
   const activeLinkEffective = pathname?.startsWith("/projects")
     ? "Projects"
@@ -20,21 +20,19 @@ export default function Header() {
         : activeLink;
 
   useEffect(() => {
-    // Determine the initial theme from the document's class list
     const isDark = document.documentElement.classList.contains("dark");
     const initialTheme = isDark ? "dark" : "light";
-    const timer = setTimeout(() => {
-      setTheme(initialTheme);
-    }, 0);
-    return () => clearTimeout(timer);
+    setTheme(initialTheme);
   }, []);
 
   const toggleTheme = () => {
     if (theme === "dark") {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
       setTheme("light");
     } else {
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
       setTheme("dark");
     }
   };
