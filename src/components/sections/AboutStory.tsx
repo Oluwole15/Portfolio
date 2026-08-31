@@ -74,9 +74,9 @@ export default function AboutStory() {
             >
               Beyond Work
             </h2>
-            <div className="relative w-full max-w-sm aspect-[3/2] overflow-hidden rounded-2xl">
+            <div className="relative w-full max-w-sm aspect-square overflow-hidden rounded-2xl">
               <Image
-                src="/about/image-5.jpg"
+                src="/about/nexa.jpg"
                 alt="Beyond Work"
                 fill
                 className="object-cover"
