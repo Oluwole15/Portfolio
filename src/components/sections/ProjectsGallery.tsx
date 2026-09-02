@@ -23,6 +23,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Designed the SEECH Micro-App Ecosystem",
+    description: "A collection of lightweight digital products designed to solve focused user needs within one connected ecosystem.",
+    category: "Mobile Apps",
+    alsoIn: ["Websites", "Dashboards"],
+    href: "https://seech.app",
+    cover: <Image src="/projects/seech.jpg" alt="SEECH Micro-App Ecosystem" fill className="object-contain" sizes="(max-width: 640px) 85vw, (max-width: 1024px) 50vw, 33vw" />,
+  },
+  {
     title: "Gadgetra Mobile App",
     description: "Designed an e-commerce mobile app for discovering and purchasing consumer gadgets.",
     category: "Mobile Apps",
